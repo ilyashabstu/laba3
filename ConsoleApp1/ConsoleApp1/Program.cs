@@ -189,6 +189,14 @@ namespace ConsoleApp1
             }
             Array.Sort(mod);
             Console.WriteLine("Минимальный модуль "+mod[1]);//из-за статического конструктора так
+            Vector vector1 = new Vector(new int[] { 124, 234, 41, 32, 132, 1233, 2 });
+            Console.WriteLine("Сумма вектора " + vector1.sum());
+            Console.WriteLine("Модуль вектора " + vector1.module());
+            Vector vector2 = new Vector(new int[] { 124, 234, 41, 32, 132, 1233, 2 });
+            Console.WriteLine(vector1.Equals(vector1));
+            Console.WriteLine(vector1.ToString());
+            var hello = new { Name = "Hello", site = "tut.by" };
+            Console.WriteLine(hello.GetType());
         }
 
     }
